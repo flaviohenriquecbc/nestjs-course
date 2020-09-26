@@ -36,3 +36,7 @@ throw new NotFoundException(`Coffee #${id} no found`);
 throw new HttpException(`Coffee #${id} no found`, HttpStatus.NOT_FOUND);
 ```
 
+Start containers in detached / background mode
+```
+docker-compose up -d
+```

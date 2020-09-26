@@ -9,6 +9,9 @@ async function bootstrap() {
       whitelist: true, // strips the parameters that are not part of the DTO
       transform: true, // transforms the received DTO information on a DTO instance
       forbidNonWhitelisted: true, // returns an error if non expected parameters are passed
+      transformOptions: {
+        enableImplicitConversion: true,
+      },
     }),
   );
   await app.listen(3000);
